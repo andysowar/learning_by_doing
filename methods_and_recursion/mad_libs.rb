@@ -1,17 +1,20 @@
 #!/usr/bin/env ruby
 
-answers = Array.new
+answers = []
 
-questions = ["Enter an adjective", "Enter an adjective", "Enter a noun", "Enter a noun", "Enter a plural noun",
-  "Enter a game you like to play", "Enter a plural noun", "Enter a verb ending in -ing ", "Enter a verb ending in -ing",
-  "Enter a plural noun", "Enter a verb ending in -ing ","Enter a noun", "Enter the name of a plant",
-  "Enter a body part","Enter a place you like to visit","Enter a verb ending in -ing ","Enter an adjective",
-  "Enter a number","Enter a plural noun"]
+questions = ["Enter an adjective", "Enter an adjective", "Enter a noun",
+             "Enter a noun", "Enter a plural noun",
+             "Enter a game you like to play", "Enter a plural noun",
+             "Enter a verb ending in -ing ", "Enter a verb ending in -ing",
+             "Enter a plural noun", "Enter a verb ending in -ing ",
+             "Enter a noun", "Enter the name of a plant", "Enter a body part",
+             "Enter a place you like to visit", "Enter a verb ending in -ing ",
+             "Enter an adjective", "Enter a number", "Enter a plural noun"]
 
 questions.each do |question, input|
-puts question
-input = gets.chomp
-answers.push input
+  puts question
+  input = gets.chomp
+  answers.push input
 end
 
 puts 'Thanks! Here is your mad lib:'
