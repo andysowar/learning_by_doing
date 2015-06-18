@@ -18,10 +18,10 @@ class CashRegister
   def pay(amount_paid)
     if @total_amount_owed > amount_paid
        @total_amount_owed -= amount_paid
-       puts "Your new total is #{@total_amount_owed}"
+       puts "Your new total is $#{sprintf "%.2f", @total_amount_owed}"
     else
       change = amount_paid - @total_amount_owed
-      puts "Your change is $#{change.round(2)}"
+      puts "Your change is $#{sprintf "%.2f", change}"
       @total_amount_owed = 0.00
     end
   end
