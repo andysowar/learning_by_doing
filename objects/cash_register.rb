@@ -1,7 +1,6 @@
 #!/usr/bin/env ruby
 
 class CashRegister
-
   def initialize
     @total_amount_owed = 0.00
   end
@@ -10,7 +9,6 @@ class CashRegister
       puts items_purchased
       @total_amount_owed += items_purchased
   end
-
 
   def total
     @total_amount_owed
@@ -27,7 +25,6 @@ class CashRegister
       @total_amount_owed = 0.00
     end
   end
-
 end
 
 register = CashRegister.new
