@@ -1,5 +1,8 @@
 #!/usr/bin/env ruby
 #Calculates fuel cost for your road trip.
+#Input the length of your trip (miles_driven)
+#Input the mpg of your car (miles_per_gallon)
+#Input the price of gas (price_per_gallon)
 class FuelCost
   def initialize
     @miles_per_gallon = 0
