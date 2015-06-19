@@ -1,13 +1,20 @@
+• Create a program called "string_practice.rb"
 # Fizz Buzz
 
-• There is a common interview question called FizzBuzz. For this homework assignment, implement FizzBuzz.
+• Create a variable with the string "this is a string to practice with"
 
-• Create a program called "fizz_buzz.rb"
+• When string_practice.rb is run, it should print out the following strings
 
-• This program should output the numbers 1 through 100, however:
+– this is a string to practice with
 
-– If evenly divisible by 3, print Fizz
+– This is a string to practice with
 
-– If evenly divisible by 5, print Buzz
+– THIS IS A STRING TO PRACTICE WITH
 
-– If evenly divisible by 3 and 5, print FizzBuzz – Otherwise, print out the number
+– This is a 'string' to practice with
+
+– The string 'this is a string to practice with' has 33 characters
+
+– htiw ecitcarp ot gnirts a si siht
+
+– practice practice practice!
