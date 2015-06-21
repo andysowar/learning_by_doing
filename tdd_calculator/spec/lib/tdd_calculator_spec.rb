@@ -54,4 +54,28 @@ describe Calculator do
       expect(subject.total).to eq(25)
     end
   end
+
+  describe '#divide(number)' do
+    it 'should raise error when dividing by zero' do
+      subject.divide(0)
+      expect { Object.new.explode! }.to raise_error
+    end
+
+    it 'can divide positive numbers' do
+      subject.add(5)
+      subject.divide(5)
+      expect(subject.total).to eq(1)
+    end
+
+    it 'can divide negative numbers' do
+      subject.subtract(5)
+      subject.divide(5)
+      expect(subject.total).to eq(-1)
+    end
+
+    it 'can divide with zero' do
+      subject.divide(5)
+      expect(subject.total).to eq(0)
+    end
+  end
 end
